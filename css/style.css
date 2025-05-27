@@ -232,3 +232,139 @@ header .container .headerActions .BurgerIcon.active span:last-child {
   }
 }
 /* ----------------- header end ------------------ */
+main {
+  min-height: 100vh;
+  background: url("../image/bg.png");
+  background-position: center;
+  background-size: cover;
+}
+main .container {
+  padding-top: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .container .info {
+  flex-basis: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+main .container .info h2 {
+  font-size: 2.7rem;
+  text-transform: uppercase;
+}
+main .container .info h2 span {
+  color: var(--primary-color);
+}
+main .container .info p {
+  line-height: 1.2;
+  color: var(--paragraphs-color);
+}
+main .container .info button {
+  padding: 0.7rem 1.8rem;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+  width: fit-content;
+  text-transform: capitalize;
+}
+main .container .image {
+  flex-basis: 50%;
+  position: relative;
+  top: -2.5rem;
+}
+main .container .image img {
+  width: 100%;
+}
+@media (max-width: 991px) {
+  main .container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.3rem;
+  }
+  main .container .info {
+    text-align: center;
+    flex-basis: 100%;
+    align-items: center;
+  }
+  main .container .image {
+    flex-basis: 100%;
+    top: 0;
+  }
+}
+@media (max-width: 475px) {
+  main .container .info h2 {
+    font-size: 2.1rem;
+  }
+}
+/* ------------------------ main section end ------------------------------------- */
+/* ------------ features start ----------------- */
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 250px));
+  justify-content: space-around;
+  gap: 1rem;
+  align-items: center;
+}
+.features .container .feature {
+  padding: 0.6rem;
+  text-align: center;
+  box-shadow: 0 0 6px var(--primary-color);
+}
+.features .container .feature i {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+}
+.features .container .feature h4 {
+  text-transform: capitalize;
+  margin: 10px 0;
+}
+.features .container .feature p {
+  color: var(--paragraphs-color);
+}
+/* ------------ features end ----------------- */
+/* ------------- about start ----------------- */
+.about {
+  margin: 4.3rem 0;
+  overflow: hidden;
+}
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.about .container .image {
+  width: 32rem;
+}
+.about .container .image img {
+  width: 100%;
+}
+.about .container .about-info {
+  width: 40%;
+  position: relative;
+}
+.about .container .about-info h2 {
+  text-transform: capitalize;
+}
+.about .container .about-info p {
+  color: var(--paragraphs-color);
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 991px) {
+  .about .container .image {
+    position: absolute;
+    bottom: -50%;
+    right: -30%;
+    opacity: 0.4;
+  }
+  .about .container .about-info {
+    flex-basis: 80%;
+    text-align: left;
+  }
+}
+/* ------------- about end ----------------- */
