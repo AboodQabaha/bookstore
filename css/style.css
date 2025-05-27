@@ -368,3 +368,53 @@ main .container .image img {
   }
 }
 /* ------------- about end ----------------- */
+/* --------------------------- featured books start -------------------- */
+.featuredBooks .container {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+.featuredBooks .container .book {
+  padding: 0.3rem 0.9rem;
+  width: 15rem;
+  border: 1px solid #444;
+  text-align: center;
+  flex-shrink: 0;
+  transition: 400ms;
+}
+.featuredBooks .container .book:hover {
+  box-shadow: 0 0 6px var(--primary-color);
+}
+.featuredBooks .container .book img {
+  width: 80%;
+}
+.featuredBooks .container .book .bookTitle {
+  text-transform: capitalize;
+  margin: 0.6rem 0;
+}
+.featuredBooks .container .book .author {
+  color: gray;
+  margin-bottom: 0.6rem;
+}
+.featuredBooks .container .book .Genre {
+  color: var(--primary-color);
+}
+.featuredBooks .container .book .price {
+  margin: 0.6rem 0;
+}
+.featuredBooks .container .book .price .prevPrice {
+  text-decoration: line-through;
+}
+/* change the scroll bar for the featuredBooks section */
+.featuredBooks .container::-webkit-scrollbar {
+  height: 0.4rem;
+}
+.featuredBooks .container::-webkit-scrollbar-track {
+  background: #d1d1d1;
+}
+.featuredBooks .container::-webkit-scrollbar-thumb {
+  background-color: #237e81;
+  border-radius: 0.25rem;
+}
+/* --------------------------- featured books end -------------------- */
